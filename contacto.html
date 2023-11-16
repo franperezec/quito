@@ -20,60 +20,78 @@
         </nav>
     </header>
     <main>
-
+        <!-- Sección de Contacto -->
         <section id="contact-form">
             <h2>Contáctanos</h2>
-            <p>Estamos listos para responder tus preguntas y proporcionarte la información que necesitas para tu próxima aventura en Quito. Completa el formulario y uno de nuestros representantes se pondrá en contacto contigo pronto.</p>
+            <p>¿Planeando tu próxima aventura en Quito? Estamos aquí para ayudarte con cualquier pregunta o información que necesites.</p>
+            <!-- Formulario de Contacto -->
             <form action="send-mail.php" method="post">
+                <!-- Campos del Formulario -->
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
-                
                 <div class="form-group">
-                    <label for="email">Correo electrónico:</label>
+                    <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                
                 <div class="form-group">
                     <label for="mensaje">Tu Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
                 </div>
-                
                 <div class="form-group">
                     <button type="submit" class="submit-button">Enviar Consulta</button>
                 </div>
             </form>
         </section>
+    
+        <!-- Sección de Información de Contacto y Mapa -->
+        <section id="contact-info">
+            <h2>Encuéntranos en Quito</h2>
+            <!-- Mapa de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63836.890541690576!2d-78.56232047832032!3d-0.14434559999999627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5854cf70a1d8b%3A0xa15a71c39c079bba!2sQuito%20Turismo!5e0!3m2!1sen!2sec!4v1700104491269!5m2!1sen!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Información Adicional -->
+            <p>Visítanos en nuestra oficina o contáctanos por teléfono o email para asistencia personalizada.</p>
+            <table>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Detalle</th>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td>Quito Turismo. Pje. Amazonas, Quito 170104</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:turismo@quito.ec">turismo@quito.ec</a></td>
+                </tr>
+                <tr>
+                    <td>Teléfono</td>
+                    <td><a href="tel:+5932993300">+593 2993300</a></td>
+                </tr>
+            </table>
+            
+        </section>
     </main>
+    
 
     <footer>
-        <div class="footer-content">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes alguna pregunta o te gustaría obtener más información sobre Quito? ¡Nos encantaría ayudarte!</p>
-            <address>
-                Pasaje Oe3 Río Amazonas N23-20 y calle N-50B.<br>
-                Antiguo aeropuerto, Quito<br>
-                Email: <a href="mailto:turismo@quito.ec">turismo@quito.ec</a><br>
-                Teléfono: <a href="tel:+5932993300">+593 2993300</a>
-            </address>
-            <p>Horario de atención: 8 AM - 5 PM</p>
-            
-        </div>
+        <!-- Redes Sociales y Enlaces Útiles -->
         <div class="footer-social">
             <a href="https://www.facebook.com/quito" target="_blank">
-                <img src="facebook-icon.png" alt="Facebook" title="Síguenos en Facebook">
+                <img src="facebook-icon.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com/quito" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram" title="Síguenos en Instagram">
+                <img src="instagram-icon.png" alt="Instagram">
             </a>
             <a href="https://www.whatsapp.com/quito" target="_blank">
-                <img src="whatsapp-icon.png" alt="WhatsApp" title="Contáctanos por WhatsApp">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
             </a>
         </div>
         <div class="footer-legal">
             <p>© 2023 Quito Turismo. Todos los derechos reservados.</p>
         </div>
     </footer>
+    
 </body>
 </html>
