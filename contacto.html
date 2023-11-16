@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quito Turismo - Destinos</title>
+</head>
+<body>
+    <header>
+        <h1>Quito: Donde los Andes Revelan sus Secretos</h1>
+        <p>Bienvenido a la capital eterna de Ecuador, un lugar donde la historia, la cultura y la naturaleza se encuentran.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="itinerarios.html">Itinerarios</a></li>
+                <li><a href="vida-en-quito.html">Viva Quito</a></li>
+                <li><a href="consejos-viajeros.html">Consejos para Viajeros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="contact-form">
+            <h2>Contáctanos</h2>
+            <p>Estamos listos para responder tus preguntas y proporcionarte la información que necesitas para tu próxima aventura en Quito. Completa el formulario y uno de nuestros representantes se pondrá en contacto contigo pronto.</p>
+            <form action="send-mail.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Tu Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Enviar Consulta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta o te gustaría obtener más información sobre Quito? ¡Nos encantaría ayudarte!</p>
+            <address>
+                Pasaje Oe3 Río Amazonas N23-20 y calle N-50B.<br>
+                Antiguo aeropuerto, Quito<br>
+                Email: <a href="mailto:turismo@quito.ec">turismo@quito.ec</a><br>
+                Teléfono: <a href="tel:+5932993300">+593 2993300</a>
+            </address>
+            <p>Horario de atención: 8 AM - 5 PM</p>
+            
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/quito" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook" title="Síguenos en Facebook">
+            </a>
+            <a href="https://www.instagram.com/quito" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram" title="Síguenos en Instagram">
+            </a>
+            <a href="https://www.whatsapp.com/quito" target="_blank">
+                <img src="whatsapp-icon.png" alt="WhatsApp" title="Contáctanos por WhatsApp">
+            </a>
+        </div>
+        <div class="footer-legal">
+            <p>© 2023 Quito Turismo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
