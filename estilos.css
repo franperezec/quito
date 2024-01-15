@@ -5,17 +5,24 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header, footer {
-    background-color: #333;
+    background-color: #005aab; /* Color azul oscuro para el encabezado y pie de página */
     color: white;
     text-align: center;
     padding: 1em 0;
 }
 
-header h1, header p {
+header h1 {
     margin: 0;
+    font-size: 2.5em; /* Tamaño más grande para el título principal */
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2em;
 }
 
 nav ul {
@@ -31,10 +38,13 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: white;
+    font-size: 1.1em; /* Tamaño ligeramente mayor para los enlaces de navegación */
 }
 
 main {
     padding: 20px;
+    max-width: 1200px; /* Ancho máximo para el contenido principal */
+    margin: 0 auto; /* Centrar el contenido principal */
 }
 
 section {
@@ -44,6 +54,7 @@ section {
 .youtube-video {
     width: 100%;
     height: auto;
+    border: none; /* Eliminar el borde por defecto */
 }
 
 /* Estilos para imágenes */
@@ -53,45 +64,88 @@ img {
     object-fit: cover; /* Asegura que las imágenes se recorten para ajustarse, manteniendo su aspecto */
 }
 
-/* Estilos para Divs de Sección */
-section > div {
-    margin-bottom: 15px;
+/* Estilos para artículos */
+article {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Borde sutil para cada artículo */
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco para mayor legibilidad */
 }
 
 /* Botones */
-button {
-    background-color: #4CAF50;
+button, .submit-button {
+    background-color: #007bff; /* Color azul brillante para los botones */
     color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados para los botones */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Sombra ligera para resaltar los botones */
 }
 
-button:hover {
-    background-color: #45a049;
+button:hover, .submit-button:hover {
+    background-color: #0056b3; /* Color de hover más oscuro para los botones */
 }
 
-/* Footer */
-.footer-social img {
+/* Estilos para el formulario de contacto */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+
+    /* Footer */
+.footer-social {
+    text-align: center;
+    padding: 20px 0;
+    }
+    
+    .footer-social img {
     width: 24px;
     height: 24px;
     margin: 0 10px;
-}
-
-.footer-social {
-    text-align: center;
-}
-
-/* Media Queries para Responsividad */
-@media (max-width: 600px) {
+    }
+    
+    .footer-legal {
+    background-color: #003366; /* Color azul más oscuro para el pie de página */
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9em;
+    }
+    
+    /* Media Queries para Responsividad */
+    @media (max-width: 768px) {
     nav ul li {
-        display: block;
-        margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
+    }
+    header h1 {
+        font-size: 2em;
     }
 }
+
+@media (max-width: 600px) {
+.footer-social, .footer-legal {
+text-align: left;
+padding: 10px;
+}
+}
+
 
