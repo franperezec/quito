@@ -1,6 +1,6 @@
 /* Estilos Generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -43,22 +43,19 @@ section {
 
 .youtube-video {
     width: 100%;
-    max-width: 560px;
-    height: 315px;
+    height: auto;
 }
 
-footer div {
-    margin-bottom: 10px;
+/* Estilos para imágenes */
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Asegura que las imágenes se recorten para ajustarse, manteniendo su aspecto */
 }
 
-.footer-social {
-    text-align: center;
-}
-
-.footer-social img {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
+/* Estilos para Divs de Sección */
+section > div {
+    margin-bottom: 15px;
 }
 
 /* Botones */
@@ -79,6 +76,17 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Footer */
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.footer-social {
+    text-align: center;
+}
+
 /* Media Queries para Responsividad */
 @media (max-width: 600px) {
     nav ul li {
@@ -86,3 +94,4 @@ button:hover {
         margin-bottom: 5px;
     }
 }
+
